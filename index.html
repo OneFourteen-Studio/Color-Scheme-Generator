@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Color Scheme Generator</title>
     <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <script src="index.js" defer></script>
 </head>
 <body>
-    <section class="seed-scheme-container">
+    <section class="seed-scheme-container base-color">
         <input type="color" class="seed-color">
-        <select id="schemes" name="schemes">
+        <select id="schemes" class="schemes">
             <option value="monochrome">Monochrome</option>
             <option value="monochrome-dark">Monochrome-Dark</option>
             <option value="monochrome-light">Monochrome-Light</option>
@@ -20,6 +23,23 @@
             <option value="triad">Triad</option>
             <option value="quad">Quad</option>
         </select>
+        <button class="color-btn">Get color scheme</button>
+    </section>
+
+    <section class="color-container">
+        <div class="colors"></div>
+        <div class="colors"></div>
+        <div class="colors"></div>
+        <div class="colors"></div>
+        <div class="colors"></div>
+    </section>
+
+    <section class="hex-container base-color">
+        <p class="hex-numbers">#F55A5A</p>
+        <p class="hex-numbers">#F55A5A</p>
+        <p class="hex-numbers">#F55A5A</p>
+        <p class="hex-numbers">#F55A5A</p>
+        <p class="hex-numbers">#F55A5A</p>
     </section>
 </body>
 </html>
