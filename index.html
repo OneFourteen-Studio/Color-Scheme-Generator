@@ -12,7 +12,7 @@
 </head>
 <body>
     <section class="seed-scheme-container base-color">
-        <input type="color" class="seed-color">
+        <input type="color" class="seed-color" id="seed-color">
         <select id="schemes" class="schemes">
             <option value="monochrome">Monochrome</option>
             <option value="monochrome-dark">Monochrome-Dark</option>
@@ -23,11 +23,11 @@
             <option value="triad">Triad</option>
             <option value="quad">Quad</option>
         </select>
-        <button class="color-btn">Get color scheme</button>
+        <button class="color-btn" data-button="get-scheme">Get color scheme</button>
     </section>
 
     <section class="color-container">
-        <div class="colors"></div>
+        <div class="colors" id="seed-background"></div>
         <div class="colors"></div>
         <div class="colors"></div>
         <div class="colors"></div>
@@ -35,11 +35,11 @@
     </section>
 
     <section class="hex-container base-color">
-        <p class="hex-numbers">#F55A5A</p>
-        <p class="hex-numbers">#F55A5A</p>
-        <p class="hex-numbers">#F55A5A</p>
-        <p class="hex-numbers">#F55A5A</p>
-        <p class="hex-numbers">#F55A5A</p>
+        <p class="hex-numbers">#FFFFFF</p>
+        <p class="hex-numbers">#FFFFFF</p>
+        <p class="hex-numbers">#FFFFFF</p>
+        <p class="hex-numbers">#FFFFFF</p>
+        <p class="hex-numbers">#FFFFFF</p>
     </section>
 </body>
 </html>
